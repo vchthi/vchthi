@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <style>
+        .form-group {
+            margin: 10px 0px;
+        }
+
+        .form-control {
+            width: 98%;
+            padding: 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+
+        .form-control:focus {
+            background-color: yellow;
+            box-shadow: 0 0 3px red;
+            border: 1px solid yellow;
+        }
+
+        .form-button {
+            padding: 8px 30px;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: orangered;
+            box-shadow: inset 0 0 20px blue;
+        }
+
+        .form-button:hover {
+            color: blue;
+            box-shadow: inset 0 0 20px orangered;
+        }
+
+        .form-button:disabled {
+            color: darkgray;
+            box-shadow: inset 0 0 20px gray;
+        }
+
+        .chu {
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="" class="chu">Họ và tên</label>
+            <input type="text" class="form-control" tabindex="1">
+        </div>
+        <div class="form-group">
+            <fieldset style="margin: 10px 0px;">
+                <legend>Giới tính: </legend><br>
+                <input type="radio"><span class="chu">Nam</span>
+                <input type="radio"><span class="chu">Nữ</span>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label for="" class="chu">Ngày sinh: </label><br>
+            <input type="date">
+        </div>
+        <div class="form-group">
+            <label for="" class="chu">Điểm</label>
+            <input class="form-control" type="number" min="0" max="10" step="0,25">
+        </div>
+        <div class="form-group">
+            <label for="" class="chu">Nghề nghiệp: </label><br>
+            <input class="form-control" type="list" list="die">
+            <datalist>
+                <option value="IT"></option>
+                <option value="Marketer"></option>
+                <option value="Sale"></option>
+            </datalist>
+        </div>
+        <div class="form-group">
+            <fieldset style="margin: 10px 0px;">
+                <legend>Sở thích: </legend><br>
+                <input type="checkbox" class="chu">Thể thao
+                <input type="checkbox" class="chu">Du lịch
+                <input type="checkbox" class="chu">Âm nhạc
+                <input type="checkbox" class="chu">Âm thực
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label class="chu" for="">Ghi chú: </label><br>
+            <textarea name="" id="" cols="30" rows="5" tabindex="2">
+
+            </textarea>
+        </div>
+        <div class="form-group">
+            <button class="form-button" tabindex="4">Đăng ký</button>
+            <button class="form-button" tabindex="4">Nhập lại</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

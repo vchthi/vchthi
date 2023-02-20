@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+                /* reset css  */
+        }
+        .container{
+            height: 500px;
+            border: 1px solid red;
+            margin-left: auto;
+            margin-right: auto;
+            /* khung vien  */
+            background-image: linear-gradient(red,yellow);
+            /* mau nen chuyen sac tu top den bottom */
+            background-image: linear-gradient(to right,red,yellow,blue);
+            /* mau nen chuyen sach tu left sang right */
+            opacity: 0.5;
+            /* do mo */
+        }
+        .container p{
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            text-transform: uppercase; /* viet hoa */ 
+          /* can giua  */
+          transform: translate(-50%;-50%);
+          /* can chu, hinh anh giua background  */
+        }
+    </style>
+</head>
+<body> 
+    
+    <div class="container">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+</body>
+</html> 

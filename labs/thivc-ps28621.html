@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võ Chánh Thi_PS28621</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(22, 11, 93);
+            position: relative;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        input {
+            border-radius: 10px;
+            padding: 10px 0;
+            width: 350px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            line-height: 20px;
+        }
+
+        .thead {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+
+        }
+
+        .thead li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 10px;
+        }
+
+        .search {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            translate: 0 -50%;
+
+        }
+
+
+        li:hover {
+            background-color: red;
+        }
+
+        .bgr {
+            position: relative;
+            text-align: center;
+        }
+
+        .img-bgr {
+            height: 500px;
+            background: url(../img/uiux-group.jpg);
+            background-size: 100% 100%;
+            opacity: 0.6;
+            position: relative;
+            background-image: url(..//img/uiux-group.jpg);
+            background-position: center center;
+            padding: 20%;
+            padding-bottom: 50%;
+        }
+
+        .bgr .text-bgr {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
+
+        .bgr h1 {
+            margin: 0;
+            padding: 0;
+            color: White;
+            text-shadow: 0 0 15px orangered;
+            font-size: 35px;
+            border-bottom: 1px dotted orangered;
+            text-align: center;
+            letter-spacing: 7px;
+        }
+
+        .bgr p {
+            font-size: 28px;
+            margin-bottom: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+
+       .mxh{
+        float:left;
+        
+        
+       }
+
+        .login input {
+
+margin-left: 600px;
+            margin-right: 20px;
+            
+            border: black;
+            background-color: rgb(255, 255, 255);
+            line-height: 20px;
+
+
+        }
+
+        .login button {
+            margin-left: 600px;
+            margin-right: 20px;
+            
+            width: 350px;
+            background-color: rgb(93, 206, 93);
+            color: white;
+            border: black;
+            line-height: 30px;
+
+
+        }
+
+
+        button:hover {
+
+            transform: scale(1.1);
+        }
+
+        .register {
+            background-color: rgb(14, 50, 81);
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .register p {
+            text-align: center;
+            color: white;
+            line-height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/FPT_Polytechnic.png" alt="logo">
+        <div class="thead">
+            <ul>
+                <li>Trang chủ</li>
+                <li>Tin Tức</li>
+                <li>Sản Phẩm</li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+        <div class="search">
+            <ul>
+                <box-icon name='search'></box-icon><input type="text" placeholder="      TÌM KIẾM">
+            </ul>
+        </div>
+    </div>
+    <div class="bgr">
+        <div class="img-bgr">
+
+        </div>
+        <div class="text-bgr">
+            <h1>FPT POLYTECHNIC</h1>
+            <p>Thực học - Thực nghiệp</p>
+        </div>
+    </div>
+    <h2>LỰA CHỌN PHƯƠNG THỨC ĐĂNG NHẬP</h2>
+    <div class="mxh">
+        <label for=""> <strong>Đăng nhập Facebook</strong></label> <br>
+        <input type="" placeholder="Đăng nhập Twitter"><br>
+        <input type="" placeholder="Đăng nhập google++" ><br>
+    </div>
+    <div class="login">
+        <input name="id" type="text" class="searchTerm" placeholder="Tên đăng nhập"> <br>
+        <br>
+        <input name="id" type="text" class="searchTerm" placeholder="Mật khẩu"> <br>
+        <br>
+        <button>Đăng nhập</button>
+    </div>
+    <br> <br>
+    <div class="register">
+        <p>Đăng ký</p>
+        <p>Quên mật khẩu?</p>
+    </div>
+    <br><br><br><br><br>
+</body>
+
+
+</html>
